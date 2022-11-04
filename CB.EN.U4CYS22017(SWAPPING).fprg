@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22017"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:40:24 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTExLTA0OzEwOjI1OjE4IEFNOzMwNTY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTExLTA0OzEwOjQwOjI0IEFNOzE7MzE1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter for A&quot;" newline="True"/>
+            <input variable="A"/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER FOR B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;CURRENT VALUE OF A IS:&quot;&amp; A" newline="True"/>
+            <output expression="&quot;CURRENT VALUE OF B IS&quot;&amp; B" newline="True"/>
+            <assign variable="A" expression="A+B"/>
+            <assign variable="B" expression="A-B"/>
+            <assign variable="A" expression="A-B"/>
+            <output expression="&quot;SWAPPED VALUE OF A IS &quot;&amp;A" newline="True"/>
+            <output expression="&quot;SWAPPED VALUE OF B IS&quot;&amp; B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

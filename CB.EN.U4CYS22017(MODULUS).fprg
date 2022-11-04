@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22017"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:53:32 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTExLTA0OzEwOjQzOjI4IEFNOzMwNTc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTExLTA0OzEwOjUzOjMyIEFNOzI7MzE2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dividend" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number to dividend&quot;" newline="True"/>
+            <input variable="dividend"/>
+            <declare name="divisor" type="Integer" array="False" size=""/>
+            <output expression="&quot;enetr the number to be divisor&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <declare name="quotient" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number to be quotient&quot;" newline="True"/>
+            <input variable="quotient"/>
+            <assign variable="quotient" expression="dividend/divisor"/>
+            <declare name="modulus" type="Integer" array="False" size=""/>
+            <assign variable="modulus" expression="quotient*(dividend/divisor)"/>
+            <output expression="&quot;the modulud is&quot;&amp;modulus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
