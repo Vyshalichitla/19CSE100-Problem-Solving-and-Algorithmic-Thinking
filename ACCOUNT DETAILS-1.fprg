@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22017"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:53:51 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTExLTE4OzA4OjUzOjU0IEFNOzMwNjk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTExLTE4OzEwOjUzOjUxIEFNOzU7MzE3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ACCNO" type="Integer" array="False" size=""/>
+            <assign variable="ACCNO" expression="2345678"/>
+            <declare name="AMOUNT" type="Integer" array="False" size=""/>
+            <comment text="declared and assign the account no&#13;&#10;"/>
+            <declare name="BALANCE" type="Real" array="False" size=""/>
+            <declare name="PIN1" type="Integer" array="False" size=""/>
+            <assign variable="PIN1" expression="2022"/>
+            <assign variable="BALANCE" expression="6000"/>
+            <declare name="NAME" type="String" array="False" size=""/>
+            <declare name="pin" type="Integer" array="False" size=""/>
+            <comment text="given the pin and assigned the pin"/>
+            <output expression="&quot;WELCOME TO SBI BANK&quot;" newline="True"/>
+            <output expression="&quot;ENTER YOUR ACCNO&quot;" newline="True"/>
+            <input variable="ACCNO"/>
+            <output expression="&quot;ENTER YOUR NAME&quot;" newline="True"/>
+            <input variable="NAME"/>
+            <output expression="&quot;ENTER YOUR PIN&quot;" newline="True"/>
+            <input variable="PIN"/>
+            <if expression="PIN==PIN1">
+                <then>
+                    <output expression="&quot;ENTER THE AMOUNT YOU WANT TO WITHDRAW&quot;" newline="True"/>
+                    <input variable="AMOUNT"/>
+                    <output expression="&quot;PLEASE WITHDRAW THE CASH&quot;" newline="True"/>
+                    <assign variable="BALANCE" expression="BALANCE-AMOUNT"/>
+                    <output expression="&quot;YOUR CURRENT BALANCE IS&quot;" newline="True"/>
+                    <output expression="&quot;BALANCE IS&quot;" newline="True"/>
+                    <output expression="&quot;YOUR TRANSACTION IS SUCCESSFUL&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;please recheck the pin and try again&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
