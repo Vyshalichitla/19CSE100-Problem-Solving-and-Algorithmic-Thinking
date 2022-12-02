@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22017"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:29:49 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTEyLTAyOzA5OjM0OjMyIEFNOzMwNTk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTEyLTAyOzEwOjI5OjQ5IEFNOzM7MzE3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <comment text="declared the variables"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;addition table of &quot;&amp; i &amp;&quot; is&quot;" newline="True"/>
+                <comment text="given output for all the tables from 1 to 10"/>
+                <for variable="n" start="1" end="10" direction="inc" step="1">
+                    <comment text="assigned the sum"/>
+                    <assign variable="sum" expression="n+i"/>
+                    <output expression="i&amp;&quot;+&quot;&amp;n&amp;&quot;=&quot;&amp;(n+i)" newline="True"/>
+                    <comment text="the output of addition from 1 to 10"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
