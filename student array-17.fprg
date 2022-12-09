@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="S.RAMESH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 10:57:49 PM"/>
+        <attribute name="created" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjItMTItMDk7MTA6MjM6MjYgQU07Mjg5OA=="/>
+        <attribute name="edited" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjItMTItMDk7MTA6MzQ6NDQgQU07MTtQQVZBTjtDVVNDVVRBOzIwMjItMTItMDk7MDk6MjM6NDEgQU07bnN0dWRlbnRzIG1hcmtzIHN5c3RlbS5mcHJnOzgwNjI="/>
+        <attribute name="edited" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjItMTItMDk7MTA6NDM6MTYgQU07MjszMDA4"/>
+        <attribute name="edited" value="SkVFU0hJVEhBO0RFU0tUT1AtSTQzVlROVjsyMDIyLTEyLTA5OzEwOjU3OjQ5IFBNOzE7MzE1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="index, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter number of students&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="mark1" type="Integer" array="True" size="n"/>
+            <declare name="mark2" type="Integer" array="True" size="n"/>
+            <declare name="mark3" type="Integer" array="True" size="n"/>
+            <declare name="mark4" type="Integer" array="True" size="n"/>
+            <declare name="mark5" type="Integer" array="True" size="n"/>
+            <declare name="avg" type="Integer" array="True" size="n"/>
+            <declare name="tot" type="Integer" array="True" size="n"/>
+            <declare name="roll" type="Integer" array="True" size="n"/>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;enter the mark1 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="mark1[index]"/>
+                <output expression="&quot;enter the mark2 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="mark2[index]"/>
+                <output expression="&quot;enter the mark3 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="mark3[index]"/>
+                <output expression="&quot;enter the mark4 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="mark4[index]"/>
+                <output expression="&quot;enter the mark5 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="mark5[index]"/>
+                <output expression="&quot;enter the roll number&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="roll[index]"/>
+            </for>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="tot[index]" expression="mark1[Index]+mark2[Index]+mark3[Index]+mark4[Index]+mark5[Index]"/>
+                <assign variable="avg[index]" expression="tot[index]/5"/>
+            </for>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Rollno:&quot;&amp;roll[Index]&amp;&quot;&quot;" newline="True"/>
+                <output expression="&quot;MARKS: &quot;" newline="False"/>
+                <output expression="&quot;&quot;&amp;mark1[Index]&amp;&quot; ,&quot;" newline="False"/>
+                <output expression="&quot;&quot;&amp;mark2[Index]&amp;&quot; ,&quot;" newline="False"/>
+                <output expression="&quot;&quot;&amp;mark3[Index]&amp;&quot; ,&quot;" newline="False"/>
+                <output expression="&quot;&quot;&amp;mark4[Index]&amp;&quot; ,&quot;" newline="False"/>
+                <output expression="mark5[Index]" newline="True"/>
+                <output expression="&quot;total:&quot;&amp;tot[Index]&amp;&quot;&quot;" newline="True"/>
+                <output expression="&quot;average:&quot;&amp;avg[Index]&amp;&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
