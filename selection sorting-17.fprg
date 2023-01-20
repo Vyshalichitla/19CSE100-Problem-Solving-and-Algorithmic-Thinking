@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22017"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:51:52 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIzLTAxLTIwOzA5OjA1OjExIEFNOzMwNTM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIzLTAxLTIwOzEwOjUxOjUyIEFNOzI7MzE2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="no" type="Integer" array="True" size="n"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;no:&quot;" newline="True"/>
+                <input variable="no[i]"/>
+            </for>
+            <for variable="x" start="0" end="n-2" direction="inc" step="1">
+                <for variable="y" start="x+1" end="n-1" direction="inc" step="1">
+                    <if expression="no[x] &gt; no[y]">
+                        <then>
+                            <assign variable="z" expression="no[x]"/>
+                            <assign variable="no[x]" expression="no[y]"/>
+                            <assign variable="no[y]" expression="z"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="no[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
