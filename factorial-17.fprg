@@ -2,28 +2,37 @@
 <flowgorithm fileversion="3.0">
     <attributes>
         <attribute name="name" value=""/>
-        <attribute name="authors" value="CB.EN.U4CYS22017"/>
+        <attribute name="authors" value="JEESHITHA"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-12-02 09:31:31 AM"/>
-        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTEyLTAyOzA5OjIzOjE2IEFNOzMwNTk="/>
-        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNzsyMDIyMjNNQVlDMDA1NDsyMDIyLTEyLTAyOzA5OjMxOjMxIEFNOzE7MzE2Mw=="/>
+        <attribute name="saved" value="2023-01-27 07:10:32 PM"/>
+        <attribute name="created" value="SkVFU0hJVEhBO0RFU0tUT1AtSTQzVlROVjsyMDIzLTAxLTI3OzA3OjA0OjA4IFBNOzMwMzQ="/>
+        <attribute name="edited" value="SkVFU0hJVEhBO0RFU0tUT1AtSTQzVlROVjsyMDIzLTAxLTI3OzA3OjEwOjMyIFBNOzE7MzEzNg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="i" type="Integer" array="False" size=""/>
-            <declare name="n" type="Integer" array="False" size=""/>
-            <declare name="fac" type="Integer" array="False" size=""/>
-            <comment text="declared the variables"/>
-            <assign variable="fac" expression="1"/>
-            <comment text="assigned factorial =1 for not repeating the valiues again&#13;&#10;"/>
-            <output expression="&quot;enter the no&quot;" newline="True"/>
+            <declare name="n, FAC" type="Integer" array="False" size=""/>
+            <comment text="declared the variables and given input of n&#13;&#10;"/>
             <input variable="n"/>
-            <for variable="i" start="1" end="n" direction="inc" step="1">
-                <comment text="expressed the value of fac"/>
-                <assign variable="fac" expression="fac*i"/>
-            </for>
-            <output expression="fac" newline="True"/>
+            <comment text="assigned the fuction for factorial"/>
+            <assign variable="FAC" expression="fac(n)"/>
+            <output expression="FAC" newline="True"/>
+        </body>
+    </function>
+    <function name="fac" type="Integer" variable="FAC">
+        <parameters>
+            <parameter name="N" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="fac" type="Integer" array="False" size=""/>
+            <if expression="N==1">
+                <then>
+                    <assign variable="FAC" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="FAC" expression="fac(N-1)*N"/>
+                </else>
+            </if>
         </body>
     </function>
 </flowgorithm>

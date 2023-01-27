@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JEESHITHA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 07:15:05 PM"/>
+        <attribute name="created" value="SkVFU0hJVEhBO0RFU0tUT1AtSTQzVlROVjsyMDIzLTAxLTI3OzA3OjEwOjM0IFBNOzMwMzA="/>
+        <attribute name="edited" value="SkVFU0hJVEhBO0RFU0tUT1AtSTQzVlROVjsyMDIzLTAxLTI3OzA3OjE1OjA1IFBNOzI7MzE0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, SUM" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="SUM" expression="sum(n)"/>
+            <output expression="SUM" newline="True"/>
+        </body>
+    </function>
+    <function name="sum" type="Integer" variable="SUM">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="SUM" type="Integer" array="False" size=""/>
+            <if expression="N==1">
+                <then>
+                    <assign variable="SUM" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="SUM" expression="n*(n+1)/2"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
