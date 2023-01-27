@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hansi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 09:03:57 PM"/>
+        <attribute name="created" value="aGFuc2k7SEFOU0lDQTsyMDIzLTAxLTI3OzA3OjA3OjU1IFBNOzIzMTk="/>
+        <attribute name="edited" value="aGFuc2k7SEFOU0lDQTsyMDIzLTAxLTI3OzA4OjQ1OjU5IFBNOzQ7MjQzNw=="/>
+        <attribute name="edited" value="SkVFU0hJVEhBO0RFU0tUT1AtSTQzVlROVjsyMDIzLTAxLTI3OzA5OjAzOjU3IFBNOzE7MzE0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fib, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <output expression="&quot;The required fibonacci series is &quot;" newline="True"/>
+            <assign variable="fib" expression="Fibonacci(n)"/>
+        </body>
+    </function>
+    <function name="Fibonacci" type="Integer" variable="a">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="a, b, c, i" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <if expression="n=0">
+                <then/>
+                <else>
+                    <assign variable="a" expression="0"/>
+                    <assign variable="b" expression="1"/>
+                    <while expression="i&lt;=n">
+                        <assign variable="c" expression="a+b"/>
+                        <output expression="a &amp;&quot; + &quot; &amp;b&amp;&quot; = &quot; &amp;c" newline="True"/>
+                        <assign variable="a" expression="b"/>
+                        <assign variable="b" expression="c"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                    <output expression="&quot;no value&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
